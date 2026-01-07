@@ -64,7 +64,7 @@ const validateCoordinate = (coord: string, type: "lat" | "lng"): boolean => {
 }
 
 export function useQRGenerator() {
-  const [activeTab, setActiveTab] = useState("text")
+  const [activeTab, setActiveTab] = useState("url")
   const [qrData, setQRData] = useState<QRData>({
     text: "",
     url: "",
@@ -84,7 +84,7 @@ export function useQRGenerator() {
   })
   const [qrCodeUrl, setQrCodeUrl] = useState("")
   const [errorLevel, setErrorLevel] = useState<"L" | "M" | "Q" | "H">("M")
-  const [size, setSize] = useState(256)
+  const [size, setSize] = useState(1024)
   const [validationErrors, setValidationErrors] = useState<Record<string, string>>({})
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
