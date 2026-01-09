@@ -497,7 +497,7 @@ export default function QRGenerator() {
           <p className="text-gray-500 text-sm">
             Developed by {" "}
             <a
-              href="https://asjordi.dev"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="text-black hover:text-gray-700 transition-colors duration-200 underline"
